@@ -1,0 +1,149 @@
+
+<h1>Home</h1>
+<style media="screen">
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: #ECEFF1;
+  color: rgba(0,0,0,0.87);
+}
+
+a {
+  color: rgb(3,155,229);
+}
+
+#message {
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 2px;
+  background: white;
+  padding: 16px 24px;
+}
+
+#message h1 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+#message p {
+  font-weight: 300;
+  line-height: 150%;
+}
+
+#message ul {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+#message li a {
+  display: inline-block;
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  background: rgb(3,155,229);
+  color: white;
+  border: 1px solid rgb(3,155,229);
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+<div id="message" ng-controller="HomeController">
+	<ul>
+		<div>Device 1</div>
+		<label class="switch">
+
+			<input type="checkbox" ng-model="checkboxModel.value1" ng-click="checkbox1Clicked()">
+			<div class="slider round" ></div>
+		</label>
+		<br/>
+		<tt>value1 = {{checkboxModel.value1}}</tt><br/>
+
+		<div>Device 2</div>
+		<label class="switch">
+
+			<input type="checkbox" ng-model="checkboxModel.value2" ng-click="checkbox2Clicked()">
+			<div class="slider round"></div>
+		</label><br/>
+		<tt>value2 = {{checkboxModel.value2}}</tt><br/>
+		<div>Device 3</div>
+		<label class="switch">
+
+			<input type="checkbox" ng-model="checkboxModel.value3" ng-click="checkbox3Clicked()">
+			<div class="slider round"></div>
+		</label><br/>
+		<tt>value3 = {{checkboxModel.value3}}</tt><br/>
+		<div>Device 4</div>
+		<label class="switch">
+
+			<input type="checkbox" ng-model="checkboxModel.value4" ng-click="checkbox4Clicked()">
+			<div class="slider round"></div>
+		</label><br/>
+		<tt>value4 = {{checkboxModel.value4}}</tt><br/>
+	</ul>
+
+</div>
+<p><a href="#/login">Logout</a></a></p>
