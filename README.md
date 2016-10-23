@@ -11,6 +11,20 @@ rpi relay remote control
 ### Setp3
   set your web dev env
   
+  ```
+  
+  cd <path_to_remote_relay>/web/
+  
+  ```
 ### Setp4
   set your pi
+  
+  ```
+  cd <path_to_remote_relay>/client/
+  npm install
+  node app.js
+  ```
+  
 ### Setp5
+  wiring
+  ![rpi to 4 channel relay](https://imgur.com/gallery/jgb9Whttps://i.imgur.com/siTVMbE.jpg
