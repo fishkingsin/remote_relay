@@ -6,6 +6,8 @@ rpi relay remote control
   
 ### Setp1
   setup [google firebase](https://firebase.google.com/docs/web/setup)
+  setup [google firebase detabase](https://firebase.google.com/docs/database/web/start)
+  setup [google firebase webhosting](https://firebase.google.com/docs/hosting/quickstart)
 ### Setp2
   clone repository to your PC and RPi
 ### Setp3
@@ -14,6 +16,7 @@ rpi relay remote control
   ```
   
   cd <path_to_remote_relay>/web/
+  firebase serve
   
   ```
 ### Setp4
