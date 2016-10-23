@@ -27,4 +27,4 @@ rpi relay remote control
   
 ### Setp5
   wiring
-  ![rpi to 4 channel relay](https://imgur.com/gallery/jgb9Whttps://i.imgur.com/siTVMbE.jpg
+  ![rpi to 4 channel relay](https://i.imgur.com/siTVMbE.jpg)
